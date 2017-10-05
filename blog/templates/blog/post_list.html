@@ -4,8 +4,17 @@
 	</head>
 	<body>
 		<div>
-			<h1><a href="" title="Chris Blog">Chris' Blog</a></h1>
+			<h1><a href="/" title="Chris Blog">Chris' Blog</a></h1>
 		</div>
+		{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>				
+				<h1><a href="">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+		{% endfor %}
+		<h3>----above are dynamic content----</h3>
+		<h3>----following are static content----</h3>
 		<div>
 			<p>published: 2017-10-03</p>
 			<h2><a href="">My first post</a></h2>
@@ -18,6 +27,11 @@
 		</div>
 		<p>Hi there!</p>
 		<p>It works!</p>
+
+		{{ posts.text }}
 	</body>
 
 </html>
+<!--
+		{{posts}}<br />
+-->
