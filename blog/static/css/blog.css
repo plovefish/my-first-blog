@@ -47,10 +47,10 @@ h1, h2, h3, h4 {
 
 h1 a {
 	color:#FCA205;
-/*	font-family: 'Lobster';		*/
-	font-family: 'Indie Flower';
+	font-family: 'Lobster';		
+/*	font-family: 'Indie Flower';	*/
 }
 
 body {
-	padding-left:15px;
+	padding-left:15px; 
 }
